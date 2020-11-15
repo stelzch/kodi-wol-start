@@ -1,0 +1,9 @@
+[Unit]
+Description=Run KODI whenever a Wake-on-LAN package is received
+
+[Service]
+Type=simple
+ExecStart=/home/pi/Scripts/kodi-starter.sh
+
+[Install]
+WantedBy=multi-user.target
